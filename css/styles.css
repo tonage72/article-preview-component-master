@@ -59,12 +59,11 @@ main > p:nth-child(3) {
 	display: grid;
 	align-items: center;
 	grid-template-columns: auto 1fr auto;
-	grid-template-rows: auto auto;
+	grid-template-rows: auto;
 	grid-template-areas:
-		"image desc share"
-		"image date share";
+		"image desc share";
 	margin: .5rem 2rem .5rem 2rem;
-	height: 50px;
+	height: 65px;
 }
 
 .personinfo > img {
@@ -74,13 +73,15 @@ main > p:nth-child(3) {
 	border-radius: 50%;
 }
 
-.personinfo > span:nth-child(2) {
-	font-weight: 700;
+.personinfo > span:nth-child(2){
 	grid-area: desc;
 }
 
-.personinfo > span:nth-child(3) {
-	grid-area: date;
+.descname {
+	font-weight: 700;
+}
+
+.descdate {
 	color: hsl(214, 17%, 51%);
 }
 
@@ -101,7 +102,8 @@ main > p:nth-child(3) {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 57px;
+	height: 65px;
+	margin: .5rem 0rem .5rem 0rem;
 	border-radius: 0 0 10px 10px;
 	padding: 0 2rem 0 2rem;
 	background-color: hsl(217, 19%, 35%);
