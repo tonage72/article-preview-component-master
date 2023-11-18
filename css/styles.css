@@ -63,7 +63,7 @@ main > p:nth-child(3) {
 	grid-template-areas:
 		"image desc share"
 		"image date share";
-	margin: 0 2rem 1rem 2rem;
+	margin: .5rem 2rem .5rem 2rem;
 	height: 50px;
 }
 
@@ -87,8 +87,8 @@ main > p:nth-child(3) {
 .share {
 	grid-area: share;
 	background-color: hsl(210, 46%, 95%);
-	width: 35px;
-	height: 35px;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 }
 
@@ -101,7 +101,7 @@ main > p:nth-child(3) {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 50px;
+	height: 57px;
 	border-radius: 0 0 10px 10px;
 	padding: 0 2rem 0 2rem;
 	background-color: hsl(217, 19%, 35%);
@@ -121,6 +121,8 @@ main > p:nth-child(3) {
 
 .sharemenu .share {
 	margin: 0 0 0 auto;
+	width: 30px;
+	height: 30px;
 	background-color: hsl(214, 17%, 51%);
 }
 
