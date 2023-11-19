@@ -40,9 +40,11 @@ img {
 main {
 	width: 85%;
 	max-width: 750px;
+	min-width: 190px;
 	position: relative;
 	background-color: white;
 	border-radius: 10px;
+	overflow: hidden;
 }
 
 main > p:nth-child(2) {
@@ -152,6 +154,7 @@ main > p:nth-child(3) {
 			"image info"
 			"image info2"
 			"image personinfo";
+		overflow: visible;
 	}
 
 	main .drawers {
@@ -201,4 +204,20 @@ main > p:nth-child(3) {
 	.sharemenu .share {
 		display: none;
 	}
+}
+
+@media (max-width: 305px) {
+
+	.sharemenu :nth-child(2),
+	.sharemenu :nth-child(3),
+	.sharemenu :nth-child(4) {
+		width: 20px;
+		margin-left: 0rem;
+	}
+
+	.sharemenu p {
+		letter-spacing: 0;
+		margin-right: .2rem;
+	}
+
 }
