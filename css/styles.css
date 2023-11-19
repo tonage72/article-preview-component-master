@@ -39,6 +39,7 @@ img {
 
 main {
 	width: 85%;
+	max-width: 750px;
 	background-color: white;
 	border-radius: 10px;
 }
@@ -136,4 +137,43 @@ main > p:nth-child(3) {
 
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 883px) {
+	body {
+		background-color: orange;
+	}
+
+	main {
+		display: grid;
+		grid-template-columns: 285px 1fr;
+		grid-template-rows: auto auto auto;
+		grid-template-areas: 
+			"image info"
+			"image info2"
+			"image personinfo";
+	}
+
+	main .drawers {
+		grid-area: image;
+		width: 100%;
+		background-position: bottom left;
+		background-size: 350px auto;
+		height: 275px;
+		border-radius: 10px 0 0 10px;
+	}
+
+	main > p:nth-child(2) {
+		grid-area: info;
+		font-size: 1.7rem;
+	}
+	
+	main > p:nth-child(3) {
+		grid-area: info2;
+		margin-bottom: 0;
+	}
+
+	.personinfo {
+		grid-area: personinfo;
+	}
 }
