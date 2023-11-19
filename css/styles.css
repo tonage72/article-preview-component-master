@@ -220,4 +220,8 @@ main > p:nth-child(3) {
 		margin-right: .2rem;
 	}
 
+	.descdate {
+		font-size: .7rem;
+	}
+
 }
